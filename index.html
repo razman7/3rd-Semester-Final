@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+    <title>RECOMMEND</title>
+  </head>
+  <body>
+
+    <div id="wrapper">
+      <section id="sec1">
+        <img src="media/logo.svg" data-aos="fade-up" id="logo">
+      </section>
+
+      <section id="sec2">
+        <div data-aos="fade-right" data-aos-duration="1000" class="left">
+          <div class="text grayt">
+            <h1>Don't know what to watch?</h1>
+            <p>Join us on the Recommend app! Where you can ask real people for recommendations! Place in up to 4 movies or shows and add a description to explain your taste, or maybe say some movies you like.</p>
+          </div>
+        </div>
+        <div data-aos="fade-left" data-aos-duration="1000" class="right" id="firstmock"></div>
+      </section>
+
+      <section id="sec3">
+        <div data-aos="fade-left" data-aos-duration="1000" class="left">
+          <div class="text whitet">
+            <h1>Don’t lose track!</h1>
+            <p>Here at Recommend we do far more than just tell you what to watch. You can also use our app to keep track of what you’ve already seen! Keep track of what you’ve seen and what you want to see with our watchlist function.</p>
+          </div>
+        </div>
+        <div id="watchwrap">
+          <div data-aos="fade-right" data-aos-duration="1000" class="watchlist" id="w1"></div>
+          <div data-aos="fade-right" data-aos-duration="1000" class="watchlist" id="w2"></div>
+          <div data-aos="fade-right" data-aos-duration="1000" class="watchlist" id="w3"></div>
+        </div>
+      </section>
+
+      <section id="sec4">
+        <div data-aos="fade-down" data-aos-duration="1000" class="left midt">
+          <div class="text grayt texty">
+            <h1>I watched HOW many days?</h1>
+            <p>Set up your profile and keep track of what you’re watching. But also, let us keep track of some things for you!
+On your profile you can see countless stats like: Hours watched, highest rated director, most re-watched  etc.
+Join now and start counting! </p>
+          </div>
+        </div>
+        <div data-aos="fade-up" data-aos-duration="1000" class="right rightmid" id="firstmock"></div>
+        <div class="meter nostripes">
+	        <span style="width: 33.3%"></span>
+        </div>
+      </section>
+
+      <section id="sec5">
+        <div data-aos="fade-right" data-aos-duration="1000" class="left">
+          <div class="text whitet">
+            <h1>Find what you’re looking for?</h1>
+            <p>We have a database that’s FILLED with movies and shows. Rate and review your favorites, or see where they are playing with our “Available on” feature.</p>
+          </div>
+        </div>
+        <div data-aos="fade-left" data-aos-duration="1000" class="right" id="secondmock"></div>
+      </section>
+
+      <section id="sec6">
+        <div data-aos="fade-left" data-aos-duration="1000" class="left">
+          <div class="text2 grayt">
+            <h1>Join a community.</h1>
+            <p>Here at Recommend we do far more than just tell you what to watch. We have an active community of users who rate, review, and discuss television and cinema.</p>
+            <img src="media/gplay.png" alt="google play download" class="dl">
+            <img src="media/appstore.png" alt="app store download" class="dl">
+          </div>
+        </div>
+        <div data-aos="fade-right" data-aos-duration="1000" class="right" id="crowd"></div>
+      </section>
+
+      <section id="sec7">
+          <p class="whitet" id="copyright">Powered by Criterion</p>
+      </section>
+    </div>
+
+    <script>
+      AOS.init();
+
+      //taken from https://css-tricks.com/css3-progress-bars/
+      $(".meter > span").each(function() {
+        $(this)
+        .data("origWidth", $(this).width())
+        .width(0)
+        .animate({
+        width: $(this).data("origWidth")
+      }, 4200);
+      });
+    </script>
+
+  </body>
+</html>
